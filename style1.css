@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+header {
+	height: 65px;
+	width: 100%;
+	background-color: #75e2e6;
+	border-bottom: 3px solid #048eaa;
+}
+#welcome {
+	height: 590px;
+	width: 890px;
+	width: 100%;
+	background-image: url("images/park.jpg");
+}
