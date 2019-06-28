@@ -1,16 +1,187 @@
 body {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
+
 header {
 	height: 65px;
 	width: 100%;
 	background-color: #75e2e6;
 	border-bottom: 3px solid #048eaa;
+	color: #000000;
 }
-#welcome {
-	height: 590px;
-	width: 890px;
+
+h1 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 32px;
+}
+
+footer {
 	width: 100%;
-	background-image: url("images/park.jpg");
+	height: 200px;
+	background-color: #048eaa;
+	color: white;
+	padding: 1.5em;
+	font-size: 26px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 }
+footer > img {
+	margin-left: 15px;
+}
+
+ul {
+	display: inline-block;
+	list-style-type: none;
+	text-decoration: none;
+	float: right;
+	font-family: 'Open Sans', sans-serif;
+	margin-left: 1em;
+	margin-right: 2em;
+}
+
+li {
+	text-decoration: none;
+    display: inline-block;
+    list-style-type: none;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 8px 20px 10px 0;
+	/*margin-left: 1em;
+	margin-right: 1em;*/
+}
+
+li a {
+	text-decoration: none;
+	color: black;
+
+}
+
+button {
+	width: 100%;
+	height: 45px;
+	color: white;
+	background-color: #048eaa;
+	text-align: center;
+	font-size: 17px;
+	text-align: center;
+	margin: 15 auto 0 auto;
+}
+
+nav {
+	height: 65px;
+	width: 100%;
+	display: inline;
+}
+input {
+	width: 450px;
+	height: 40px;
+	background-color: #75e2e6;
+	margin: 5px;
+	font-size: 17px;
+	border: 1px solid none;
+	margin-left: -5px;
+}
+#input-color {
+	background-color: white;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.text-container {
+	height: 250px;
+	width: 250px;
+	margin: 15px;
+	font-size: 14pt;
+	text-align: left;
+}
+
+form {
+	text-align: left;	
+	margin-left: 30px;
+	margin-top: 15px;
+}
+
+.logo {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 7px;
+}
+
+.welcome {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("images/park.jpg");
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	height: 675px;
+	text-align: center;
+	background-position: center bottom;
+	background-size: cover;
+	width: 100%;
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#welcome-dog {
+	padding: 30px;
+	width: 500px;
+	height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#welcome-dog > h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 32px;
+	margin: 0;
+}
+
+#welcome-dog > img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	border: 5px solid #048eaa;
+	text-align: center;
+    margin: 35px auto 0 auto;
+}
+
+.about-dog {
+	width: 100%;
+	height: 750px;
+	margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+}
+
+.dog-house {
+	display: inline-block;
+	width: 300px;
+	height: 400px;
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 30px 0 30px;
+}
+
+.dog-house > img{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	border: 5px solid #048eaa;
+}
+
+
+
+
+
+
+
+
