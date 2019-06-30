@@ -69,7 +69,6 @@ button {
 	background-color: #048eaa;
 	text-align: center;
 	font-size: 17px;
-	text-align: center;
 	margin: 15 auto 0 auto;
 }
 
@@ -79,6 +78,8 @@ nav {
 	display: inline;
 }
 input {
+	/*make sure inline block is a position*/
+	position: inline-block;
 	width: 450px;
 	height: 40px;
 	background-color: #75e2e6;
@@ -86,6 +87,7 @@ input {
 	font-size: 17px;
 	border: 1px solid none;
 	margin-left: -5px;
+	float: right;
 }
 #input-color {
 	background-color: white;
