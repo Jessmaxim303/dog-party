@@ -1,18 +1,20 @@
 /** {
-	border: 1 solid red;
+	border: 1px solid red;
 }*/
 
 body {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box; 
 }
 
 header {
 	display: inline-block;
-	height: 1600px;
+	height: 1775px;
 	width: 200px;
 	float: left;
-	background-color: grey;
+	background-color: #808080;
+	line-height: 350%;
 }
 
 h1 {
@@ -24,15 +26,26 @@ ul {
  	margin: 0;
  	padding: 0;
   	width: 100%;
-  	background-color: grey;
+  	background-color: #808080;
+  	margin-top: 60px;
 }
 
+
 li {
-	font-size: 16pt;
+	font-size: 14pt;
 	font-family: 'Roboto Slab', serif; 
 	list-style-type: none;
 	text-decoration: none;
 	font-weight: bold;
+	margin-left: 10px;
+	border: none;
+}
+
+li a:hover {
+ 	list-style-type: none;
+  	width: 100%;
+  	background-color: #3E3544;
+  	color: #ffffff;
 }
 
 li a {
@@ -43,67 +56,85 @@ li a {
 }
 
 input {
-	width: 450px;
-	height: 40px;
-	background-color: #75e2e6;
-	margin: 5px;
-	font-size: 17px;
-	border: 1px solid none;
-	margin-left: -5px;
-	float: right;
-	text-align: center;
+	display: block;
+	width: 100%;
+	height: 60px;
+	background-color: #808080;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'Roboto Slab', serif;
+	/*float: right;*/
+	/*margin: 2px;*/
+}
+
+#input-color {
+	background-color: #ffffff;
 }
 
 form {
-	margin: 70px 0 50px 0px;
+	display: line-block;
+	/*position: absolute;*/
+	/*text-align: left;	
+	text-align: center;*/
 	float: right;
+	height: 150px;
+	width: 500px;
+	/*margin-left: 700px;*/
+	margin-top: -250px;
+	color: #ffffff;
+	font-family: 'Roboto Slab', serif;
 }
 
 .logo {
-	height: 150px;
-	width: 150px;
+	height: 165px;
+	width: 165px;
 	border-radius: 50%;
 	display: block;
-	margin: 25px;
+	margin-top: 20px;
+	margin-bottom: 15px;
 	margin-left: auto;
     margin-right: auto;
 }
 .welcome {
 	width: 100%;
-	height: 450px;
+	height: 500px;
 	background-color: #3E3544;
-}
-
-.welcome-dog {
-	width: 500px;
-	height: 350px;
 	display: block;
 }
 
+#welcome-dog {
+	width: 70%;
+	height: 460px;
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+	/*border: 3px solid purple;*/
+}
+
 #welcome-dog > img {
-	width: 350px;
-	height: 350px;
+	width: 400px;
+	height: 400px;
 	border-radius: 50%;
 	border: 10px solid #9A969C;
-    margin-left: 50px;
+    margin-left: 60px;
     margin-top: 35px;
 }
 
 #welcome-dog > h1 {
-	font-family: 'Roboto', serif;
-	font-weight: 400;
-	font-size: 32px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	font-size: 45px;
 	color: #ffffff;
 	margin: 0;
 	float: right;
-	margin-right: 100px;
+	/*margin-right: 200px;*/
 	margin-left: 60px;
-	text-align: center;
+	margin-top: 80px;
 }
 
 .about-dog {
 	width: 100%;
-	height: 700px;
+	height: 1275px;
 	background-color: #ffffff;
 	display: block;
 }
@@ -113,52 +144,74 @@ h2 {
 }
 
 .dog-house {
-	width: 100%;
-	height: 300px;
-	margin-top: 30px;
-	margin-left: 30px;
+	width: 72%;
+	height: 425px;
+	margin-left: auto;
+    margin-right: auto;
+	/*margin-top: 30px;
+	margin-left: 30px;*/
 }
 
 .dog-house > img{
 	width: 225px;
 	height: 225px;
 	border-radius: 50%;
-	border: 5px solid #048eaa;
+	border: 5px solid #9A969C;
 	margin: 25px;
 }
 
 .dog-house > h2 {
 	font-size: 24pt;
-	font-family: 'Roboto', serif;
-	color: black;
+	font-family: 'Roboto Slab', serif;
+	color: #000000;
+	margin-left: 30px;
 }
 
 button {
-	width: 150px;
-	height: 40px;
+	width: 200px;
+	height: 50px;
 	color: white;
 	background-color: #3E3544;
 	text-align: center;
 	font-size: 17px;
 	text-align: center;
-	margin: 15 auto 0 auto;
+	float: right;
+	/*margin-top: 175px;*/
 }
 
 .text-container {
-	height: 200px;
-	width: 350px;
-	margin: 15px;
-	font-size: 14pt;
+	height: 250px;
+	width: 700px;
+	margin: 18px;
+	font-size: 15pt;
 	text-align: left;
 	float: right;
 	margin-right: 75px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 100;
+	color: #000000;
 }
 
 footer {
+	display: block;
 	width: 100%;
-	height: 350px;
+	height: 250px;
 	background-color: #3E3544;
+	color: #ffffff;
 	float: right;
+	text-align: right;
+}
+
+footer h4{
+	font-family: 'Roboto Slab', serif;
+	color: #ffffff;
+	margin-right: 350px;
+	font-size: 22pt;
+}
+
+footer > img {
+	margin-right: 30px;
+
 }
 
 
