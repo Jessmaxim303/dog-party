@@ -6,3 +6,5 @@ Dog party is a project that will create two different styled websites off one HT
  ![comp1](<blockquote class="imgur-embed-pub" lang="en" data-id="a/D6FLy71"><a href="//imgur.com/a/D6FLy71"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>)
  
  ![comp1](https://imgur.com/a/D6FLy71)
+ 
+ ![comp1](https://imgur.com/a/D6FLy71)
