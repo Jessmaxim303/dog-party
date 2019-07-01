@@ -9,12 +9,19 @@ body {
 }
 
 header {
+	position: fixed;
 	display: inline-block;
-	height: 1775px;
+	height: 100%;
 	width: 200px;
 	float: left;
 	background-color: #808080;
 	line-height: 350%;
+}
+
+nav {
+	height: 100%;
+	background-color: #808080;
+	width: 200px;
 }
 
 h1 {
@@ -37,7 +44,7 @@ li {
 	list-style-type: none;
 	text-decoration: none;
 	font-weight: bold;
-	margin-left: 10px;
+	/*margin-left: 10px;*/
 	border: none;
 }
 
@@ -46,6 +53,7 @@ li a:hover {
   	width: 100%;
   	background-color: #3E3544;
   	color: #ffffff;
+  	margin-left: 0;
 }
 
 li a {
@@ -57,30 +65,26 @@ li a {
 
 input {
 	display: block;
-	width: 100%;
+	width: 99%;
 	height: 60px;
 	background-color: #808080;
 	font-size: 20px;
 	font-weight: 700;
 	font-family: 'Roboto Slab', serif;
-	/*float: right;*/
-	/*margin: 2px;*/
+	border-radius: 4px;
 }
 
-#input-color {
+#topInput {
 	background-color: #ffffff;
 }
 
 form {
 	display: line-block;
-	/*position: absolute;*/
-	/*text-align: left;	
-	text-align: center;*/
 	float: right;
-	height: 150px;
+	height: 200px;
 	width: 500px;
-	/*margin-left: 700px;*/
 	margin-top: -250px;
+	margin-right: 100px;
 	color: #ffffff;
 	font-family: 'Roboto Slab', serif;
 }
@@ -96,19 +100,30 @@ form {
     margin-right: auto;
 }
 .welcome {
-	width: 100%;
+	width: 88%;
 	height: 500px;
 	background-color: #3E3544;
 	display: block;
 }
 
 #welcome-dog {
-	width: 70%;
+	/*width: 79%;*/
 	height: 460px;
 	display: inline-block;
 	margin-right: auto;
-	margin-left: auto;
+	margin-left: 200px;
 	/*border: 3px solid purple;*/
+}
+
+.topButton {
+	display: block;
+	width: 100%;
+	height: 60px;
+	background-color: black;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'Roboto Slab', serif;
+	border: 10px dotted green;
 }
 
 #welcome-dog > img {
@@ -117,7 +132,7 @@ form {
 	border-radius: 50%;
 	border: 10px solid #9A969C;
     margin-left: 60px;
-    margin-top: 35px;
+    margin-top: 40px;
 }
 
 #welcome-dog > h1 {
@@ -127,14 +142,26 @@ form {
 	color: #ffffff;
 	margin: 0;
 	float: right;
-	/*margin-right: 200px;*/
-	margin-left: 60px;
-	margin-top: 80px;
+	margin-right: 100px;
+	margin-top: 100px;
+}
+
+.welcome-button {
+	width: 100%;
+	height: 65px;
+	border-radius: 4px;
+	color: #000000;
+	background-color: #808080;
+	font-size: 20px;
+	text-align: center;
+	float: right;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
 }
 
 .about-dog {
 	width: 100%;
-	height: 1275px;
+	/*height: 1275px;*/
 	background-color: #ffffff;
 	display: block;
 }
@@ -144,19 +171,42 @@ h2 {
 }
 
 .dog-house {
-	width: 72%;
-	height: 425px;
+	width: 65%;
+	/*height: 425px;*/
 	margin-left: auto;
     margin-right: auto;
-	/*margin-top: 30px;
-	margin-left: 30px;*/
+    border-bottom: 3px solid #808080;
+
+}
+
+.dog-house-nb {
+	width: 65%;
+	/*height: 425px;*/
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.dog-house-nb > img{
+	width: 225px;
+	height: 225px;
+	border-radius: 50%;
+	border: 6px solid #9A969C;
+	margin: 25px;
+}
+
+.dog-house-nb > h2 {
+	font-size: 24pt;
+	font-family: 'Roboto Slab', serif;
+	color: #000000;
+	margin-left: 35px;
+	margin-bottom: 5px;
 }
 
 .dog-house > img{
 	width: 225px;
 	height: 225px;
 	border-radius: 50%;
-	border: 5px solid #9A969C;
+	border: 6px solid #9A969C;
 	margin: 25px;
 }
 
@@ -164,55 +214,71 @@ h2 {
 	font-size: 24pt;
 	font-family: 'Roboto Slab', serif;
 	color: #000000;
-	margin-left: 30px;
+	margin-left: 35px;
+	margin-bottom: 5px;
 }
 
 button {
-	width: 200px;
-	height: 50px;
+	width: 250px;
+	height: 70px;
+	border-radius: 4px;
 	color: white;
 	background-color: #3E3544;
-	text-align: center;
-	font-size: 17px;
+	font-size: 20px;
 	text-align: center;
 	float: right;
-	/*margin-top: 175px;*/
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
 }
 
 .text-container {
 	height: 250px;
 	width: 700px;
-	margin: 18px;
 	font-size: 15pt;
 	text-align: left;
 	float: right;
-	margin-right: 75px;
+	margin-top: 30px;
 	font-family: 'Roboto Slab', serif;
 	font-weight: 100;
 	color: #000000;
 }
 
+label {
+	font-family: 'Roboto Slab', serif;
+	font-size: 16pt;
+	margin-left: 5px;
+}
+
 footer {
 	display: block;
-	width: 100%;
+	width: 88%;
 	height: 250px;
 	background-color: #3E3544;
 	color: #ffffff;
-	float: right;
 	text-align: right;
 }
 
+#footer-sm { 
+	display: inline-block;
+	height: 170px;
+	width: 170px;
+	margin-right: 110px;
+	margin-top: 70px;
+}
+
 footer h4{
+	display: inline-block;
 	font-family: 'Roboto Slab', serif;
 	color: #ffffff;
-	margin-right: 350px;
-	font-size: 22pt;
+	margin-right: 75px;
+	font-size: 24pt;
 }
 
-footer > img {
-	margin-right: 30px;
-
+#footer-sm img {
+	margin: 10px;
 }
+
+
 
 
 
