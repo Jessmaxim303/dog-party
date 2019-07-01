@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- <link rel="stylesheet" type="text/css" href="style1.css"> -->
-    <link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style2.css"> -->
+    <meta name=“viewport” content=“width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,700&display=swap" rel="stylesheet">
 </head>
@@ -21,13 +22,14 @@
 	</header>
 	<section class="welcome">
 		<article id="welcome-dog">
-            <h1>A Site About <b>Some Dogs</b></h1>
+            <h1>A Site About <b id="someDogs">Some Dogs</b></h1>
             <img src="images/dog1-sq.jpg" alt="red dog">
 		    <form action="">
             <label for= "puppyname">Name</label>
-             <input type="text" name="puppyname" value="" id="input-color">
+             <input type="text" name="puppyname" value="" id="topInput">
              <br>
-            <input type="submit" value="Name the dog">
+             <button class="welcome-button">Name the Dog</button>
+           <!--  <input type="submit" value="Name the dog"> -->
             </form>
 		</article>
 	</section>
@@ -50,7 +52,7 @@
                 <button>What</button>
     	    </div>
     	</article>
-    	<article class="dog-house">
+    	<article class="dog-house-nb">
     		<h2>Facts From Dog</h2>
     		<img src="images/dog4-sq.jpg" alt="bad doggie">
     		<div class="text-container">
@@ -61,10 +63,12 @@
 	</section>
 	<footer>
 		<h4>Learn About Dogs Online</h4>
-		<a><img src="images/twitter.svg" alt="twitter icon"></a>
-		<img src="images/instagram.svg" alt="instagram icon">
-		<img src="images/facebook.svg" alt="facebook icon">
-		<img src="images/linkedin.svg" alt="linkedin icon">
+        <article id="footer-sm">
+		  <a><img src="images/twitter.svg" alt="twitter icon"></a>
+		  <a><img src="images/instagram.svg" alt="instagram icon"></a>
+		  <a><img src="images/facebook.svg" alt="facebook icon"></a>
+		  <a><img src="images/linkedin.svg" alt="linkedin icon"></a>
+        </article>
 	</footer>
 </body>
 </html>
